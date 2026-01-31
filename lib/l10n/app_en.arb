@@ -1,0 +1,267 @@
+{
+  "@@locale": "en",
+
+  "appName": "LeTing",
+
+  "navBrowse": "Browse",
+  "navSearch": "Search",
+  "navLibrary": "Library",
+  "navPlaylist": "Playlist",
+
+  "homeScanLocalMusic": "Scan Local Music",
+  "homeScanLocalMusicHint": "Tap here to scan music files on your device",
+  "homeRecommendedPlaylists": "Recommended Playlists",
+  "homeCreateFirstPlaylist": "Create your first playlist",
+  "homeCreateFirstPlaylistHint": "Tap to create",
+  "homeRecentlyPlayed": "Recently Played",
+  "homeNewReleases": "New Releases",
+  "homeArtists": "Artists",
+  "homeCharts": "Charts",
+  "homeHotSingles": "Hot Singles",
+  "homeHotSinglesDesc": "Updated daily",
+  "homeRisingSongs": "Rising Songs",
+  "homeRisingSongsDesc": "Real-time updates",
+  "homeOriginalMusic": "Original Music",
+  "homeOriginalMusicDesc": "Updated weekly",
+
+  "songCount": "{count} songs",
+  "@songCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "songCountSuffix": "songs",
+
+  "searchHint": "Search songs, albums, artists",
+  "searchHistory": "Search History",
+  "searchClear": "Clear",
+  "searchHotRecommend": "Hot Recommendations",
+  "searchNoResult": "No results found for \"{query}\"",
+  "@searchNoResult": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchRelatedArtists": "Related Artists",
+  "searchSongsCount": "Songs ({count})",
+  "@searchSongsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchCategoryPop": "Pop",
+  "searchCategoryRock": "Rock",
+  "searchCategoryElectronic": "Electronic",
+  "searchCategoryClassical": "Classical",
+  "searchBrowseArtists": "Browse Artists",
+  "searchForYou": "For You",
+  "searchStartListening": "Start exploring your music library",
+
+  "libraryTitle": "Library",
+  "libraryRecentlyPlayed": "Recently Played",
+  "libraryNoPlayHistory": "No play history",
+  "libraryFavorites": "Favorites",
+  "libraryFavoriteSongs": "Favorite Songs",
+  "libraryAllSongs": "All Songs",
+  "libraryMyPlaylists": "My Playlists",
+  "libraryNoPlaylistHint": "No playlists yet, tap + to create",
+  "libraryNewPlaylist": "New Playlist",
+  "libraryPlaylistName": "Playlist name",
+
+  "playerNowPlaying": "Now Playing",
+  "playerNoSong": "No song selected",
+  "playerBackToCurrent": "Back to current",
+
+  "playlistTitle": "Playlist",
+  "playlistEdit": "Edit",
+  "playlistDone": "Done",
+  "playlistClear": "Clear",
+  "playlistQueueInfo": "{count} songs · {status}",
+  "@playlistQueueInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "playlistStatusPlaying": "Playing",
+  "playlistStatusPaused": "Paused",
+  "playlistEmpty": "Playlist is empty",
+  "playlistEmptyHint": "Songs will be added after playback starts",
+
+  "playlistDetailTotalSongs": "{count} songs in total",
+  "@playlistDetailTotalSongs": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "playlistDetailPlayAll": "Play All",
+  "playlistDetailEmpty": "No songs in this playlist",
+  "playlistDetailDelete": "Delete Playlist",
+  "playlistDetailDeleteConfirm": "Are you sure you want to delete \"{name}\"?",
+  "@playlistDetailDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+
+  "scanTitle": "Scan Local Music",
+  "scanNeedPermission": "Storage permission is required to scan local music",
+  "scanTapToScan": "Tap the button below to scan music files on your device",
+  "scanSongCount": "{count} songs found",
+  "@scanSongCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "scanPermPermanentDenied": "Permission permanently denied. Please enable it in system settings",
+  "scanFoundCount": "{count} songs discovered",
+  "@scanFoundCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "scanGoToSettings": "Go to Settings",
+  "scanRetry": "Retry",
+  "scanScanning": "Scanning...",
+  "scanGrantPermission": "Grant Permission",
+  "scanStart": "Start Scan",
+  "scanRescan": "Rescan",
+  "scanSupportedFormats": "Supported formats: MP3, FLAC, WAV, AAC, M4A, OGG",
+
+  "settingsTitle": "Settings",
+  "settingsMusicManagement": "Music Management",
+  "settingsScanLocalMusic": "Scan Local Music",
+  "settingsScanLocalMusicDesc": "Search for audio files on device",
+  "settingsPlayback": "Playback",
+  "settingsEqualizer": "Equalizer",
+  "settingsEqualizerDesc": "Adjust audio frequency bands",
+  "settingsAudioQuality": "Audio Quality",
+  "settingsAppearance": "Appearance",
+  "settingsTheme": "Theme",
+  "settingsLanguage": "Language",
+  "settingsOther": "Other",
+  "settingsNotification": "Notification Control",
+  "settingsNotificationDesc": "Lock screen and notification bar playback control",
+  "settingsVersion": "LeTing v1.0.0",
+  "settingsMadeWith": "Made with Flutter",
+
+  "settingsThemeDark": "Dark",
+  "settingsThemeLight": "Light",
+  "settingsThemeSystem": "Follow System",
+  "settingsSelectTheme": "Select Theme",
+
+  "settingsQualityStandard": "Standard",
+  "settingsQualityStandardDesc": "Save storage space",
+  "settingsQualityHigh": "High Quality",
+  "settingsQualityHighDesc": "Balance quality and space",
+  "settingsQualityLossless": "Lossless",
+  "settingsQualityLosslessDesc": "Best audio quality",
+  "settingsSelectQuality": "Select Quality",
+
+  "settingsLangChinese": "中文",
+  "settingsLangEnglish": "English",
+  "settingsLangSystem": "Follow System",
+  "settingsSelectLanguage": "Select Language",
+
+  "favoritesTitle": "Favorite Songs",
+  "favoritesPlayAll": "Play All",
+  "favoritesEmpty": "No favorite songs yet",
+  "favoritesEmptyHint": "Tap the heart icon next to a song to add to favorites",
+
+  "allSongsTitle": "All Songs",
+  "allSongsEmpty": "No songs",
+  "allSongsPlayAll": "Play All",
+  "allSongsSortByTitle": "Title",
+  "allSongsSortByArtist": "Artist",
+  "allSongsSortByAlbum": "Album",
+  "allSongsSortByRecent": "Recently Added",
+  "allSongsSortInfo": "{count} songs · Sorted by {sortType}",
+  "@allSongsSortInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "sortType": {
+        "type": "String"
+      }
+    }
+  },
+
+  "artistSongs": "Songs",
+  "artistAlbums": "Albums",
+  "artistSongCount": "{count} songs",
+  "@artistSongCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "artistPlayAll": "Play All",
+  "artistShuffle": "Shuffle",
+  "artistNoSongs": "No songs from this artist",
+  "artistSelectAvatar": "Select Artist Avatar",
+  "artistResetAvatar": "Reset to Default",
+
+  "equalizerTitle": "Equalizer",
+  "equalizerUnsupported": "Equalizer not supported on this platform",
+  "equalizerAndroidOnly": "Equalizer is only available on Android devices",
+  "equalizerEnable": "Enable Equalizer",
+  "equalizerReset": "Reset",
+  "equalizerPresetFlat": "Flat",
+  "equalizerPresetBassBoost": "Bass Boost",
+  "equalizerPresetPop": "Pop",
+  "equalizerPresetRock": "Rock",
+  "equalizerPresetJazz": "Jazz",
+  "equalizerPresetClassical": "Classical",
+  "equalizerPresetVocal": "Vocal",
+  "equalizerPresetElectronic": "Electronic",
+
+  "miniPlayerNotPlaying": "Not Playing",
+
+  "songOptionsAddToPlaylist": "Add to Playlist",
+  "songOptionsSelectPlaylist": "Select Playlist",
+  "songOptionsNoPlaylist": "No playlists yet. Please create one first",
+  "songOptionsAddedTo": "Added to \"{name}\"",
+  "@songOptionsAddedTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+
+  "commonCancel": "Cancel",
+  "commonCreate": "Create",
+  "commonDelete": "Delete",
+  "commonConfirm": "OK",
+
+  "welcomeTitle": "Welcome to LeTing",
+  "welcomeScanPrompt": "Would you like to scan for music files on your device now?",
+  "welcomeLater": "Later",
+  "welcomeScanNow": "Scan Now",
+
+  "unknownArtist": "Unknown Artist",
+  "unknownAlbum": "Unknown Album",
+
+  "notificationChannelName": "LeTing"
+}

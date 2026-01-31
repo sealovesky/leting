@@ -1,0 +1,267 @@
+{
+  "@@locale": "zh",
+
+  "appName": "乐听",
+
+  "navBrowse": "浏览",
+  "navSearch": "搜索",
+  "navLibrary": "资料库",
+  "navPlaylist": "播放列表",
+
+  "homeScanLocalMusic": "扫描本地音乐",
+  "homeScanLocalMusicHint": "点击这里扫描设备中的音乐文件",
+  "homeRecommendedPlaylists": "推荐歌单",
+  "homeCreateFirstPlaylist": "创建你的第一个歌单",
+  "homeCreateFirstPlaylistHint": "点击创建",
+  "homeRecentlyPlayed": "最近播放",
+  "homeNewReleases": "新歌速递",
+  "homeArtists": "艺人",
+  "homeCharts": "排行榜",
+  "homeHotSingles": "热门单曲榜",
+  "homeHotSinglesDesc": "每日更新",
+  "homeRisingSongs": "新歌飙升榜",
+  "homeRisingSongsDesc": "实时更新",
+  "homeOriginalMusic": "原创音乐榜",
+  "homeOriginalMusicDesc": "每周更新",
+
+  "songCount": "{count} 首",
+  "@songCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "songCountSuffix": "首",
+
+  "searchHint": "搜索歌曲、专辑、艺人",
+  "searchHistory": "搜索历史",
+  "searchClear": "清空",
+  "searchHotRecommend": "热门推荐",
+  "searchNoResult": "未找到「{query}」的相关结果",
+  "@searchNoResult": {
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
+  },
+  "searchRelatedArtists": "相关艺人",
+  "searchSongsCount": "歌曲 ({count})",
+  "@searchSongsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchCategoryPop": "流行",
+  "searchCategoryRock": "摇滚",
+  "searchCategoryElectronic": "电子",
+  "searchCategoryClassical": "古典",
+  "searchBrowseArtists": "浏览艺人",
+  "searchForYou": "为你推荐",
+  "searchStartListening": "开始探索你的音乐库",
+
+  "libraryTitle": "资料库",
+  "libraryRecentlyPlayed": "最近播放",
+  "libraryNoPlayHistory": "暂无播放记录",
+  "libraryFavorites": "收藏",
+  "libraryFavoriteSongs": "喜欢的歌曲",
+  "libraryAllSongs": "全部歌曲",
+  "libraryMyPlaylists": "自建歌单",
+  "libraryNoPlaylistHint": "还没有歌单，点击 + 创建",
+  "libraryNewPlaylist": "新建歌单",
+  "libraryPlaylistName": "歌单名称",
+
+  "playerNowPlaying": "正在播放",
+  "playerNoSong": "未选择歌曲",
+  "playerBackToCurrent": "回到当前",
+
+  "playlistTitle": "播放列表",
+  "playlistEdit": "编辑",
+  "playlistDone": "完成",
+  "playlistClear": "清空",
+  "playlistQueueInfo": "共 {count} 首 · {status}",
+  "@playlistQueueInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "playlistStatusPlaying": "正在播放",
+  "playlistStatusPaused": "已暂停",
+  "playlistEmpty": "播放列表为空",
+  "playlistEmptyHint": "播放歌曲后将自动添加到列表",
+
+  "playlistDetailTotalSongs": "共 {count} 首",
+  "@playlistDetailTotalSongs": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "playlistDetailPlayAll": "播放全部",
+  "playlistDetailEmpty": "歌单还没有歌曲",
+  "playlistDetailDelete": "删除歌单",
+  "playlistDetailDeleteConfirm": "确定要删除「{name}」吗？",
+  "@playlistDetailDeleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+
+  "scanTitle": "扫描本地音乐",
+  "scanNeedPermission": "需要存储权限才能扫描本地音乐",
+  "scanTapToScan": "点击下方按钮扫描设备中的音乐文件",
+  "scanSongCount": "已有 {count} 首歌曲",
+  "@scanSongCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "scanPermPermanentDenied": "权限已被永久拒绝，请在系统设置中手动开启",
+  "scanFoundCount": "已发现 {count} 首",
+  "@scanFoundCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "scanGoToSettings": "前往设置",
+  "scanRetry": "重试",
+  "scanScanning": "扫描中...",
+  "scanGrantPermission": "授予权限",
+  "scanStart": "开始扫描",
+  "scanRescan": "重新扫描",
+  "scanSupportedFormats": "支持格式：MP3, FLAC, WAV, AAC, M4A, OGG",
+
+  "settingsTitle": "设置",
+  "settingsMusicManagement": "音乐管理",
+  "settingsScanLocalMusic": "扫描本地音乐",
+  "settingsScanLocalMusicDesc": "搜索设备中的音频文件",
+  "settingsPlayback": "播放",
+  "settingsEqualizer": "均衡器",
+  "settingsEqualizerDesc": "调整音频频段",
+  "settingsAudioQuality": "音质",
+  "settingsAppearance": "外观",
+  "settingsTheme": "主题",
+  "settingsLanguage": "语言",
+  "settingsOther": "其他",
+  "settingsNotification": "通知控制",
+  "settingsNotificationDesc": "锁屏和通知栏播放控制",
+  "settingsVersion": "乐听 v1.0.0",
+  "settingsMadeWith": "Made with Flutter",
+
+  "settingsThemeDark": "深色",
+  "settingsThemeLight": "浅色",
+  "settingsThemeSystem": "跟随系统",
+  "settingsSelectTheme": "选择主题",
+
+  "settingsQualityStandard": "标准",
+  "settingsQualityStandardDesc": "节省存储空间",
+  "settingsQualityHigh": "高品质",
+  "settingsQualityHighDesc": "平衡音质与空间",
+  "settingsQualityLossless": "无损",
+  "settingsQualityLosslessDesc": "最佳音质",
+  "settingsSelectQuality": "选择音质",
+
+  "settingsLangChinese": "中文",
+  "settingsLangEnglish": "English",
+  "settingsLangSystem": "跟随系统",
+  "settingsSelectLanguage": "选择语言",
+
+  "favoritesTitle": "喜欢的歌曲",
+  "favoritesPlayAll": "播放全部",
+  "favoritesEmpty": "还没有收藏的歌曲",
+  "favoritesEmptyHint": "点击歌曲旁的心形按钮收藏",
+
+  "allSongsTitle": "全部歌曲",
+  "allSongsEmpty": "暂无歌曲",
+  "allSongsPlayAll": "播放全部",
+  "allSongsSortByTitle": "歌曲名",
+  "allSongsSortByArtist": "艺人",
+  "allSongsSortByAlbum": "专辑",
+  "allSongsSortByRecent": "最近添加",
+  "allSongsSortInfo": "{count} 首 · 按{sortType}排序",
+  "@allSongsSortInfo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "sortType": {
+        "type": "String"
+      }
+    }
+  },
+
+  "artistSongs": "歌曲",
+  "artistAlbums": "专辑",
+  "artistSongCount": "{count} 首歌曲",
+  "@artistSongCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "artistPlayAll": "播放全部",
+  "artistShuffle": "随机播放",
+  "artistNoSongs": "该艺人暂无歌曲",
+  "artistSelectAvatar": "选择艺人头像",
+  "artistResetAvatar": "恢复默认",
+
+  "equalizerTitle": "均衡器",
+  "equalizerUnsupported": "当前平台不支持均衡器",
+  "equalizerAndroidOnly": "均衡器仅在 Android 设备上可用",
+  "equalizerEnable": "启用均衡器",
+  "equalizerReset": "重置",
+  "equalizerPresetFlat": "平坦",
+  "equalizerPresetBassBoost": "低音增强",
+  "equalizerPresetPop": "流行",
+  "equalizerPresetRock": "摇滚",
+  "equalizerPresetJazz": "爵士",
+  "equalizerPresetClassical": "古典",
+  "equalizerPresetVocal": "人声",
+  "equalizerPresetElectronic": "电子",
+
+  "miniPlayerNotPlaying": "未在播放",
+
+  "songOptionsAddToPlaylist": "添加到歌单",
+  "songOptionsSelectPlaylist": "选择歌单",
+  "songOptionsNoPlaylist": "暂无歌单，请先创建歌单",
+  "songOptionsAddedTo": "已添加到「{name}」",
+  "@songOptionsAddedTo": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+
+  "commonCancel": "取消",
+  "commonCreate": "创建",
+  "commonDelete": "删除",
+  "commonConfirm": "确定",
+
+  "welcomeTitle": "欢迎使用乐听",
+  "welcomeScanPrompt": "是否立即扫描设备中的音乐文件？",
+  "welcomeLater": "稍后",
+  "welcomeScanNow": "立即扫描",
+
+  "unknownArtist": "未知艺人",
+  "unknownAlbum": "未知专辑",
+
+  "notificationChannelName": "乐听"
+}
