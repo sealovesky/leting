@@ -173,9 +173,6 @@ class _PlaylistScreenState extends State<PlaylistScreen> {
           onTap: () =>
               player.playSong(song, queue: queue, index: index),
           onLongPress: () => showSongOptionsSheet(context, song),
-          onDelete: isPlaying
-              ? null
-              : () => player.removeFromQueue(index),
         );
       },
     );
