@@ -141,20 +141,13 @@ class SettingsScreen extends StatelessWidget {
                         Center(
                           child: Column(
                             children: [
-                              Container(
-                                width: 48,
-                                height: 48,
-                                decoration: BoxDecoration(
-                                  gradient: const LinearGradient(
-                                    colors: [
-                                      Color(0xFFFC3E4E),
-                                      Color(0xFFFF7B54),
-                                    ],
-                                  ),
-                                  borderRadius: BorderRadius.circular(12),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(12),
+                                child: Image.asset(
+                                  'assets/app_icon.png',
+                                  width: 48,
+                                  height: 48,
                                 ),
-                                child: const Icon(Icons.music_note_rounded,
-                                    color: Colors.white, size: 24),
                               ),
                               const SizedBox(height: 8),
                               Text(l10n.settingsVersion,

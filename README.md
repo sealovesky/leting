@@ -5,8 +5,8 @@
 <h1 align="center">乐听 LeTing</h1>
 
 <p align="center">
-  Apple Music 风格的本地音乐播放器，Flutter 构建<br>
-  A local music player with Apple Music style dark theme UI, built with Flutter.
+  <em>LeTing your Life.</em><br>
+  No streaming. No accounts. Just your music.
 </p>
 
 <p align="center">
