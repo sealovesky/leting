@@ -56,7 +56,18 @@
 
 ### 截图
 
-<!-- TODO: 添加截图 -->
+<p align="center">
+  <img src="screenshots/home.jpg" width="200" />
+  <img src="screenshots/search.jpg" width="200" />
+  <img src="screenshots/library.jpg" width="200" />
+  <img src="screenshots/player.jpg" width="200" />
+</p>
+<p align="center">
+  <img src="screenshots/playlist.jpg" width="200" />
+  <img src="screenshots/artist.jpg" width="200" />
+  <img src="screenshots/all_songs.jpg" width="200" />
+  <img src="screenshots/equalizer.jpg" width="200" />
+</p>
 
 ### 安装
 
@@ -203,7 +214,18 @@ LeTing (乐听) is a cross-platform local music player built with Flutter. It fe
 
 ### Screenshots
 
-<!-- TODO: Add screenshots -->
+<p align="center">
+  <img src="screenshots/home.jpg" width="200" />
+  <img src="screenshots/search.jpg" width="200" />
+  <img src="screenshots/library.jpg" width="200" />
+  <img src="screenshots/player.jpg" width="200" />
+</p>
+<p align="center">
+  <img src="screenshots/playlist.jpg" width="200" />
+  <img src="screenshots/artist.jpg" width="200" />
+  <img src="screenshots/all_songs.jpg" width="200" />
+  <img src="screenshots/equalizer.jpg" width="200" />
+</p>
 
 ### Installation
 
