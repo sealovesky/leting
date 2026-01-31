@@ -2,7 +2,10 @@
   <img src="assets/app_icon.png" width="128" height="128" alt="LeTing Icon" />
 </p>
 
+<h1 align="center">乐听 LeTing</h1>
+
 <p align="center">
+  Apple Music 风格的本地音乐播放器，Flutter 构建<br>
   A local music player with Apple Music style dark theme UI, built with Flutter.
 </p>
 
@@ -18,7 +21,154 @@
   <img src="https://img.shields.io/badge/Dart-Native-0175C2?logo=dart" alt="Dart">
 </p>
 
-[English](#english) | [中文](#中文)
+[中文](#中文) | [English](#english)
+
+---
+
+## 中文
+
+### 简介
+
+乐听（LeTing）是一款用 Flutter 构建的跨平台本地音乐播放器。采用 Apple Music 风格深色主题 UI，播放设备上存储的音乐文件。无需联网，无需账号 — 只为你的音乐。
+
+### 功能特性
+
+#### 播放
+- 完整播放控制和队列管理
+- 播放模式：顺序、随机、单曲循环、列表循环
+- 后台播放 + 通知栏控制
+- 均衡器（Android）
+- 播放队列跨重启持久化
+
+#### 资料库
+- 本地音乐扫描 + ID3 元数据和封面提取
+- 艺人和专辑浏览（从音乐库聚合）
+- 自定义艺人头像
+- 收藏和播放历史
+- 歌单创建和管理
+
+#### 体验
+- LRC 歌词同步显示
+- 全文搜索 + 搜索历史
+- 深色 / 浅色 / 跟随系统主题
+- 多语言：中文和英文
+- 应用名称随系统语言切换
+
+### 截图
+
+<!-- TODO: 添加截图 -->
+
+### 安装
+
+#### 环境要求
+- Flutter SDK >= 3.10
+- Android: compileSdk 34, minSdk 21
+- iOS: Deployment Target 13.0
+- macOS: 仅 macOS 构建需要
+
+#### 从源码构建
+
+```bash
+# 克隆仓库
+git clone https://github.com/sealovesky/leting.git
+cd leting
+
+# 安装依赖
+flutter pub get
+
+# 生成本地化代码
+flutter gen-l10n
+
+# 运行（调试模式）
+flutter run
+
+# 构建发布版 APK
+flutter build apk --release
+
+# 构建 iOS
+flutter build ios --release
+```
+
+#### 下载发布版
+
+前往 [Releases](https://github.com/sealovesky/leting/releases) 页面下载预编译 APK。
+
+### 使用方法
+
+1. **启动** — 首次打开会提示扫描本地音乐
+2. **扫描** — 授予存储权限后扫描设备中的音乐文件
+3. **浏览** — 在资料库页面浏览歌曲、艺人、专辑
+4. **播放** — 点击歌曲开始播放，上滑进入全屏播放器
+5. **整理** — 创建歌单、收藏歌曲、设置自定义艺人头像
+
+### 项目结构
+
+```
+lib/
+├── main.dart                    # 入口，MultiProvider 注入
+├── theme/
+│   └── app_theme.dart           # 颜色和主题配置
+├── models/
+│   ├── song.dart                # 歌曲模型（对应 songs 表）
+│   ├── artist.dart              # 艺人模型（内存聚合）
+│   ├── album.dart               # 专辑模型（内存聚合）
+│   ├── playlist.dart            # 歌单模型（对应 playlists 表）
+│   └── play_mode.dart           # 播放模式枚举
+├── services/
+│   ├── audio_player_service.dart    # just_audio + audio_service 封装
+│   ├── local_music_service.dart     # 文件扫描 + 元数据提取
+│   ├── lyrics_service.dart          # LRC 歌词解析
+│   ├── storage_service.dart         # SQLite 全表 CRUD
+│   └── preference_service.dart      # SharedPreferences KV 存储
+├── providers/
+│   ├── player_provider.dart     # 播放状态、队列、进度、音量
+│   ├── library_provider.dart    # 歌曲、艺人、专辑、收藏、历史
+│   ├── playlist_provider.dart   # 歌单 CRUD
+│   ├── search_provider.dart     # 搜索 + 历史
+│   └── settings_provider.dart   # 主题、语言、音质
+├── screens/                     # 所有页面级组件
+└── widgets/                     # 可复用组件
+```
+
+Services 层无 Flutter 依赖。Provider 层调用 Services 并通过 `notifyListeners()` 驱动 UI。
+
+### 技术栈
+
+| 包名 | 用途 |
+|------|------|
+| provider | 状态管理 |
+| just_audio | 音频播放引擎 |
+| audio_service | 后台播放 + 通知栏控制 |
+| audio_metadata_reader | ID3 标签和封面提取（纯 Dart） |
+| permission_handler | Android/iOS 存储权限 |
+| sqflite | SQLite 本地数据库 |
+| shared_preferences | KV 持久化 |
+
+### 开发计划
+
+- [x] 本地音乐扫描和元数据提取
+- [x] 完整播放控制和队列管理
+- [x] 播放队列跨重启持久化
+- [x] LRC 歌词显示
+- [x] 收藏和播放历史
+- [x] 歌单管理
+- [x] 艺人和专辑浏览
+- [x] 自定义艺人头像
+- [x] 全文搜索 + 搜索历史
+- [x] 后台播放 + 通知栏控制
+- [x] 均衡器（Android）
+- [x] 深色 / 浅色 / 跟随系统主题
+- [x] 多语言（中文 / 英文）
+- [ ] Hero 动画（迷你播放条 → 全屏播放器）
+- [ ] 下滑关闭全屏播放器
+- [ ] 拖拽排序播放列表
+- [ ] 更多排序和筛选选项
+- [ ] 锁屏控制增强
+- [ ] macOS 音乐目录扫描
+
+### 许可证
+
+MIT License — 详见 [LICENSE](LICENSE)
 
 ---
 
@@ -171,153 +321,6 @@ Services layer has no Flutter dependency. Providers call services and drive UI v
 ### License
 
 MIT License — see [LICENSE](LICENSE) for details.
-
----
-
-## 中文
-
-### 简介
-
-乐听（LeTing）是一款用 Flutter 构建的跨平台本地音乐播放器。采用 Apple Music 风格深色主题 UI，播放设备上存储的音乐文件。无需联网，无需账号 — 只为你的音乐。
-
-### 功能特性
-
-#### 播放
-- 完整播放控制和队列管理
-- 播放模式：顺序、随机、单曲循环、列表循环
-- 后台播放 + 通知栏控制
-- 均衡器（Android）
-- 播放队列跨重启持久化
-
-#### 资料库
-- 本地音乐扫描 + ID3 元数据和封面提取
-- 艺人和专辑浏览（从音乐库聚合）
-- 自定义艺人头像
-- 收藏和播放历史
-- 歌单创建和管理
-
-#### 体验
-- LRC 歌词同步显示
-- 全文搜索 + 搜索历史
-- 深色 / 浅色 / 跟随系统主题
-- 多语言：中文和英文
-- 应用名称随系统语言切换
-
-### 截图
-
-<!-- TODO: 添加截图 -->
-
-### 安装
-
-#### 环境要求
-- Flutter SDK >= 3.10
-- Android: compileSdk 34, minSdk 21
-- iOS: Deployment Target 13.0
-- macOS: 仅 macOS 构建需要
-
-#### 从源码构建
-
-```bash
-# 克隆仓库
-git clone https://github.com/sealovesky/leting.git
-cd leting
-
-# 安装依赖
-flutter pub get
-
-# 生成本地化代码
-flutter gen-l10n
-
-# 运行（调试模式）
-flutter run
-
-# 构建发布版 APK
-flutter build apk --release
-
-# 构建 iOS
-flutter build ios --release
-```
-
-#### 下载发布版
-
-前往 [Releases](https://github.com/sealovesky/leting/releases) 页面下载预编译 APK。
-
-### 使用方法
-
-1. **启动** — 首次打开会提示扫描本地音乐
-2. **扫描** — 授予存储权限后扫描设备中的音乐文件
-3. **浏览** — 在资料库页面浏览歌曲、艺人、专辑
-4. **播放** — 点击歌曲开始播放，上滑进入全屏播放器
-5. **整理** — 创建歌单、收藏歌曲、设置自定义艺人头像
-
-### 项目结构
-
-```
-lib/
-├── main.dart                    # 入口，MultiProvider 注入
-├── theme/
-│   └── app_theme.dart           # 颜色和主题配置
-├── models/
-│   ├── song.dart                # 歌曲模型（对应 songs 表）
-│   ├── artist.dart              # 艺人模型（内存聚合）
-│   ├── album.dart               # 专辑模型（内存聚合）
-│   ├── playlist.dart            # 歌单模型（对应 playlists 表）
-│   └── play_mode.dart           # 播放模式枚举
-├── services/
-│   ├── audio_player_service.dart    # just_audio + audio_service 封装
-│   ├── local_music_service.dart     # 文件扫描 + 元数据提取
-│   ├── lyrics_service.dart          # LRC 歌词解析
-│   ├── storage_service.dart         # SQLite 全表 CRUD
-│   └── preference_service.dart      # SharedPreferences KV 存储
-├── providers/
-│   ├── player_provider.dart     # 播放状态、队列、进度、音量
-│   ├── library_provider.dart    # 歌曲、艺人、专辑、收藏、历史
-│   ├── playlist_provider.dart   # 歌单 CRUD
-│   ├── search_provider.dart     # 搜索 + 历史
-│   └── settings_provider.dart   # 主题、语言、音质
-├── screens/                     # 所有页面级组件
-└── widgets/                     # 可复用组件
-```
-
-Services 层无 Flutter 依赖。Provider 层调用 Services 并通过 `notifyListeners()` 驱动 UI。
-
-### 技术栈
-
-| 包名 | 用途 |
-|------|------|
-| provider | 状态管理 |
-| just_audio | 音频播放引擎 |
-| audio_service | 后台播放 + 通知栏控制 |
-| audio_metadata_reader | ID3 标签和封面提取（纯 Dart） |
-| permission_handler | Android/iOS 存储权限 |
-| sqflite | SQLite 本地数据库 |
-| shared_preferences | KV 持久化 |
-
-### 开发计划
-
-- [x] 本地音乐扫描和元数据提取
-- [x] 完整播放控制和队列管理
-- [x] 播放队列跨重启持久化
-- [x] LRC 歌词显示
-- [x] 收藏和播放历史
-- [x] 歌单管理
-- [x] 艺人和专辑浏览
-- [x] 自定义艺人头像
-- [x] 全文搜索 + 搜索历史
-- [x] 后台播放 + 通知栏控制
-- [x] 均衡器（Android）
-- [x] 深色 / 浅色 / 跟随系统主题
-- [x] 多语言（中文 / 英文）
-- [ ] Hero 动画（迷你播放条 → 全屏播放器）
-- [ ] 下滑关闭全屏播放器
-- [ ] 拖拽排序播放列表
-- [ ] 更多排序和筛选选项
-- [ ] 锁屏控制增强
-- [ ] macOS 音乐目录扫描
-
-### 许可证
-
-MIT License — 详见 [LICENSE](LICENSE)
 
 ---
 
